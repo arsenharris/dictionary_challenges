@@ -20,7 +20,8 @@ def grocery_calculator(groceries: dict):
 
     Example output: 21.22
     """
-    pass
+    total=sum(groceries.values())
+    return total
 
 def word_counter(word_list: list):
     """A function to count the occurrences of each word in a word list.
