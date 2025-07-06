@@ -36,7 +36,13 @@ def word_counter(word_list: list):
 
     Example output: {"apple": 3, "banana": 2, "cherry": 1}
     """
-    pass
+    word_count= {}
+    for word in word_list:
+        if word in word_count:
+            word_count[word] +=1
+        else:
+            word_count[word] =1
+    return word_count 
 
 def create_colour_dict(file_path: str):
     """A function that accesses an indicated csv file of colour values and 
